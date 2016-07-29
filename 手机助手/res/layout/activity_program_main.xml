@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    tools:context=".ProgramMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/program_back"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:src="@drawable/btn_homeasup_default" />
+
+        <TextView
+            android:id="@+id/progarm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="手机检测"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+         android:layout_weight="1"  >
+
+        <ListView
+            android:id="@+id/program_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/program_progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+          </RelativeLayout>
+
+    <Button
+        android:id="@+id/program_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/mytelshape"
+        
+        android:text="清除" />
+
+    
+
+</LinearLayout>

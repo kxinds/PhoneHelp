@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhoneCleanActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+
+        <ImageView
+            android:id="@+id/phoneClean_back"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:src="@drawable/btn_homeasup_default" />
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="垃圾清理"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="#B0E0E6"
+        android:orientation="horizontal" 
+       >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已发现"
+            android:layout_gravity="center"
+            android:layout_marginLeft="74dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/phoneclear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="  0M"
+            android:layout_gravity="center"
+            
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+         android:layout_weight="1"  >
+
+        <ListView
+            android:id="@+id/phoneclear_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/phoneclear_progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+          </RelativeLayout>
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0"    
+          android:orientation="horizontal" 
+          android:layout_marginBottom="3dp">
+       
+
+        <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:id="@+id/phoneclean_checkBox"
+           android:clickable="true"
+             />
+
+   
+
+        <Button
+            android:id="@+id/phoneclean_Oneclean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一键清理"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="20dp"
+            
+           android:background="#B0E0E6"/>
+         
+    </LinearLayout>
+
+</LinearLayout>

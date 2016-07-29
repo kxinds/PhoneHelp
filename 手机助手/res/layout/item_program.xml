@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/item_progarm_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+         />
+
+    <ImageView
+        android:id="@+id/item_progaram_im"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_phonemgr" 
+        android:layout_gravity="left"
+        android:layout_weight="0"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+    <TextView
+        android:id="@+id/item_program_info1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/item_program_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:gravity="left"
+        
+        android:text="TextView" />
+    </LinearLayout>
+
+
+        
+   
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/item_clear_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          />
+
+    <ImageView
+        android:id="@+id/item_clear_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_homeasup_default" />
+
+    <TextView
+        android:id="@+id/item_clear_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高德地图"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:id="@+id/item_clear_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="340kb"
+        android:layout_marginLeft="10dp" />
+
+</LinearLayout>

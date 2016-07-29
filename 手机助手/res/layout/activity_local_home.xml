@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+       >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_r" 
+            android:layout_weight="0"
+            
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机管家"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_r" 
+            android:layout_weight="0"/>
+    
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+          <com.example.phone.view.Mymainbar
+       android:id="@+id/mymainbar1"
+       android:layout_width="320dp"
+       android:layout_height="320dp"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true" />
+           <ImageView  
+               android:layout_height="300dp"
+               android:layout_width="300dp"
+               android:id="@+id/localhome_bigButton"
+               android:background="@drawable/buttonselector"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:gravity="center"
+               android:clickable="true"
+          />
+           
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/localhome_bigButton"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="86dp"
+       android:text="点击加速" 
+       />
+
+
+
+   <TextView
+       android:id="@+id/local_result"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:text="20%" />
+           
+
+        
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+             
+           <TextView
+               android:id="@+id/phonespeed"
+               style="@style/mymainstyle"
+               android:text="手机加速"
+               android:drawableTop="@drawable/icon_rocket"
+            android:layout_marginLeft="1dp"
+               android:layout_marginRight="1dp"
+               android:clickable="true"
+                  android:layout_marginBottom="3dp"/>
+
+        
+        
+           <TextView
+               android:id="@+id/phonemanage"
+               style="@style/mymainstyle"
+               android:text="软件管理"
+            android:layout_marginLeft="1dp"
+               android:layout_marginRight="1dp"
+               android:drawableTop="@drawable/icon_softmgr"
+               android:clickable="true"
+                  android:layout_marginBottom="3dp"/>
+
+           <TextView
+               android:id="@+id/phonecheck"
+               android:text="手机检测" 
+               style="@style/mymainstyle" 
+              android:layout_marginLeft="1dp"
+               android:layout_marginRight="1dp"
+               android:drawableTop="@drawable/icon_phonemgr"
+               android:clickable="true"
+                  android:layout_marginBottom="3dp"/>
+        
+    </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal" >
+
+           <TextView
+               android:id="@+id/phoneBook"
+               android:layout_marginLeft="1dp"
+               android:layout_marginRight="1dp"
+               style="@style/mymainstyle" 
+               android:clickable="true"
+               android:text="通讯大全"
+               android:drawableTop="@drawable/icon_telmgr"
+                  android:layout_marginBottom="3dp"/>
+
+           <TextView
+               android:id="@+id/phoneClean"
+               style="@style/mymainstyle"
+               android:layout_marginBottom="3dp"
+               android:layout_marginLeft="1dp"
+               android:layout_marginRight="1dp"
+               android:clickable="true"
+               android:drawableTop="@drawable/icon_sdclean"
+               android:text="垃圾清理" />
+    
+    </LinearLayout>
+
+   
+   
+</LinearLayout>

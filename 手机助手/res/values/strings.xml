@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_local_home">LocalHomeActivity</string>
+    <string name="title_activity_phone_speed">PhoneSpeedActivity</string>
+    <string name="title_activity_phone_manage">PhoneManageActivity</string>
+    <string name="title_activity_phone_check">PhoneCheckActivity</string>
+    <string name="title_activity_tel_book">TelBookActivity</string>
+    <string name="title_activity_phone_clean">PhoneCleanActivity</string>
+    <string name="title_activity_all_programe">AllProgrameActivity</string>
+    <string name="title_activity_tel__manage">Tel_ManageActivity</string>
+    <string name="title_activity_sys_programe">SysProgrameActivity</string>
+    <string name="title_activity_user_program">UserProgramActivity</string>
+    <string name="title_activity_program_main">ProgramMainActivity</string>
+
+</resources>

@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="2dp"
+    tools:context=".TelBookActivity"
+    android:orientation="vertical" >
+
+ 
+    <LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+        <ImageView        android:id="@+id/telBook_back"
+                           android:layout_height="28dp"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/btn_homeasup_default"
+             />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="电话大全"
+        android:gravity="center"
+       
+        android:textSize="22dp" 
+
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+          >
+
+        <TextView 
+               style="@style/telbook2"
+               android:id="@+id/telbook_dhdc"
+                 android:text="电话订餐"
+                />
+                
+                <TextView 
+               style="@style/telbook"
+               android:id="@+id/telbook_ggfw"
+                 android:text="公共服务"
+                 />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:layout_weight="1"
+          >
+
+        <TextView 
+               style="@style/telbook"
+                  android:id="@+id/telbook_yys"
+               
+                 android:text="运营商"
+              />
+                
+                <TextView 
+               style="@style/telbook2"
+               android:id="@+id/telbook_kdfw"
+               
+                 android:text="快递服务"
+                 />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:layout_weight="1"
+          >
+
+        <TextView 
+               style="@style/telbook2" 
+               android:id="@+id/telbook_jpjd"
+               
+                 android:text="机票酒店"
+             />
+                
+                <TextView 
+               style="@style/telbook"
+              android:id="@+id/telbook_yhzq"
+               
+                 android:text="银行证券"
+              />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+          
+        android:orientation="horizontal" >
+
+        <TextView 
+               style="@style/telbook"
+                  android:id="@+id/telbook_bxfw"
+               
+                 android:text="保险服务"
+                 />
+                
+                <TextView 
+               style="@style/telbook2" 
+               android:id="@+id/telbook_ppsh" 
+                 android:text="品牌售后"
+                 />
+    </LinearLayout>
+    
+        
+    
+    
+    
+    
+</LinearLayout>

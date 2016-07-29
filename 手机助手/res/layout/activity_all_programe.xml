@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AllProgrameActivity" >
+<LinearLayout 
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" >
+        <ImageView       android:layout_height="28dp"
+                         android:layout_width="wrap_content"
+                            android:layout_weight="0"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/btn_homeasup_default"
+             />
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="全部应用"
+        android:gravity="center"
+       
+        android:textSize="25dp" 
+
+        />
+</LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卸载选中的应用"
+        android:layout_weight="0"
+        android:background="@drawable/shape" 
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp" />
+
+</LinearLayout>
